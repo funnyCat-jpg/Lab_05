@@ -11,7 +11,10 @@ public class Task1 {
         int FREE_SHIPPING = 100;
         double SHIPPING_PERCENT = .02;
 
+        //Asks user for item price.
         System.out.println("What is the price of your item?");
+
+        // Checks price and calculates shipping price.
         if (scan.hasNextDouble()) {
             price = scan.nextDouble();
 
@@ -26,6 +29,7 @@ public class Task1 {
             System.exit(0);
         }
 
+        // Calculates the price and prints it to the user, as well as shipping.
         total = shipping + price;
         System.out.println("Your shipping price is $" + shipping + " and your total will be " + total);
     }

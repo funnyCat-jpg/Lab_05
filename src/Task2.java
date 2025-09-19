@@ -7,7 +7,10 @@ public class Task2 {
         //Variables
         int birthMonth;
 
+        //Asks user for birth month. checks number, and prints it out.
         System.out.println("What is your birth month? (1-12, not the name of month)");
+
+        //Checks birth month, and prints birth month out.
         if (scan.hasNextInt()) {
             birthMonth = scan.nextInt();
             if (birthMonth >= 1 && birthMonth <= 12) {
